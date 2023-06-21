@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase";
 import { useRef, useEffect, useState } from "react";
+import ImgBoard from "./images/cyberpunk.jpg"
 
 const GameField = styled.div``;
 const Board = styled.img`
@@ -163,7 +164,7 @@ const Gameboard = ({ characters, setCharacters, checkWin }) => {
       <Board
         id="board-image"
         onClick={(e) => handleClick(e)}
-        src="./src/cyberpunk.jpg" // Image source for the game board
+        src={ImgBoard} // Image source for the game board
       ></Board>
       <TargetBox mode={viewMode} locX={boxLoc.x} locY={boxLoc.y}>
         {characters.map((char, index) => {

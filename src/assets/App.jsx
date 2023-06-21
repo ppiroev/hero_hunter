@@ -4,6 +4,9 @@ import StartModal from "./StartModal";
 import HighScoreBoard from "./HighScoreBoard";
 import GlobalStyle from "./GlobalStyle";
 import { useState, useEffect } from "react";
+import Tom from "./images/tom.png";
+import Brian from "./images/brian.webp"
+import Imposter from "./images/imposter.webp"
 
 const App = () => {
   const [startModalToggle, setStartModalToggle] = useState(true); // State variable for controlling the start modal visibility
@@ -15,17 +18,17 @@ const App = () => {
     {
       name: "Tom",
       marked: false,
-      image: "./src/assets/images/tom.png",
+      image: Tom,
     },
     {
       name: "Imposter",
       marked: false,
-      image: "./src/assets/images/imposter.webp",
+      image: Imposter,
     },
     {
       name: "Brian",
       marked: false,
-      image: "./src/assets/images/brian.webp",
+      image: Brian,
     },
   ]);
 

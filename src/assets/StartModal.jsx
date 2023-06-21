@@ -1,5 +1,8 @@
 /* eslint-disable react/prop-types */
 import styled from "styled-components";
+import Tom from "./images/tom.png";
+import Brian from "./images/brian.webp"
+import Imposter from "./images/imposter.webp"
 
 const Blur = styled.div`
   width: 100%;
@@ -88,15 +91,15 @@ const StartModal = ({ start }) => {
             button when ready.
           </Info>
           <CharWrap>
-            <CharImg src="./src/assets/images/tom.png" />
+            <CharImg src={Tom} />
             <CharDetail>Tom from Tom & Jerry</CharDetail>
           </CharWrap>
           <CharWrap>
-            <CharImg src="./src/assets/images/imposter.webp" />
+            <CharImg src={Imposter} />
             <CharDetail>The yellow Imposter from the Imposter game.</CharDetail>
           </CharWrap>
           <CharWrap>
-            <CharImg src="./src/assets/images/brian.webp" />
+            <CharImg src={Brian} />
             <CharDetail>Brian the dog from Family Guy.</CharDetail>
           </CharWrap>
           <StartButton onClick={() => start()}>Start</StartButton>
